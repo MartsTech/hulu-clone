@@ -1,3 +1,4 @@
+import HomeTemplate from "@template/HomeTemplate";
 import Head from "next/head";
 
 const Home = () => {
@@ -7,6 +8,7 @@ const Home = () => {
         <title>Hulu Clone</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <HomeTemplate />
     </div>
   );
 };
