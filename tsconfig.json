@@ -2,11 +2,10 @@
   "compilerOptions": {
     "baseUrl": "src",
     "paths": {
-      "@element/*": ["components/elements/*"],
       "@module/*": ["components/modules/*"],
       "@section/*": ["components/sections/*"],
       "@template/*": ["components/templates/*"],
-      "@page/*": ["pages/*"],
+      "@util/*": ["utils/*"],
       "@style/*": ["styles/*"]
     },
     "outDir": "build/dist",
