@@ -1,8 +1,6 @@
 module.exports = {
+  reactStrictMode: true,
   images: {
-    domains: ["press.hulu.com", "image.tmdb.org"],
-  },
-  future: {
-    webpack5: true,
+    domains: ["image.tmdb.org"],
   },
 };

@@ -1,6 +1,6 @@
 <h1 align="center">
-  <a href="https://hulu-clone-blue.vercel.app/">
-      <img width="200px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Hulu_logo_2017.svg/1000px-Hulu_logo_2017.svg.png" alt="Google Logo" />
+  <a href="https://hulu-clone-martstech.vercel.app">
+      <img width="200px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Hulu_logo_2017.svg/1000px-Hulu_logo_2017.svg.png" alt="Hulu Logo" />
   </a>
   <br />
   Hulu-clone
@@ -26,12 +26,13 @@
   <a href="#license">License</a>
 </p>
 
-<img src="https://raw.githubusercontent.com/MartsTech/hulu-clone/main/public/app.png" />
+![Homepage Screenshot](public/screenshots/home.png?raw=true "Homepage Screenshot")
 
 ---
 
 ## Demo
-Here is a working live demo [here](https://hulu-clone-blue.vercel.app)  
+
+Here is a working live demo [here](https://hulu-clone-martstech.vercel.app)
 
 ---
 
@@ -56,6 +57,8 @@ Here is a working live demo [here](https://hulu-clone-blue.vercel.app)
 Clone this repo to your desktop and run `yarn install` to install all the dependencies.
 Then run `yarn dev` to start the application locally
 
+Change the .env.example file to .env.local and fill the empty fields
+
 ---
 
 ## Support
@@ -70,6 +73,6 @@ Whether you use this project, have learned something from it, or just like it, p
 
 ## License
 
->You can check out the full license [here](https://github.com/MartsTech/hulu-clone/blob/main/LICENSE)
+> You can check out the full license [here](https://github.com/MartsTech/hulu-clone/blob/main/LICENSE)
 
 This project is licensed under the terms of the **MIT** license.

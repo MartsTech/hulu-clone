@@ -1,27 +1,21 @@
-import Results from "@section/Results";
-import HomeTemplate from "@template/HomeTemplate";
-import requests from "@util/requests";
+import Movies from "components/movies/Movies";
 import { GetServerSideProps } from "next";
-import Head from "next/head";
-import { resultsType } from "@type/resultsType";
+import { Movie } from "types/movie";
+import requests from "utils/requests";
 
-interface HomeProps {
-  results: resultsType;
+interface HomePageProps {
+  movies: Movie[] | null;
 }
 
-const Home: React.FC<HomeProps> = ({ results }) => {
-  return (
-    <div>
-      <Head>
-        <title>Hulu Clone</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <HomeTemplate results={<Results results={results} />} />
-    </div>
-  );
+const HomePage: React.FC<HomePageProps> = ({ movies }) => {
+  if (!movies) {
+    return null;
+  }
+
+  return <Movies movies={movies} />;
 };
 
-export default Home;
+export default HomePage;
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
   const genre =
@@ -29,13 +23,14 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
 
   const request = await fetch(
     `https://api.themoviedb.org/3${
+      // @ts-ignore
       requests[genre]?.url || requests.fetchTrending.url
     }`
   ).then((res) => res.json());
 
   return {
     props: {
-      results: request.results || {},
+      movies: request.results || null,
     },
   };
 };
