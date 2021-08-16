@@ -1,7 +1,7 @@
 module.exports = {
   mode: "jit",
   purge: ["./src/**/*.tsx"],
-  darkMode: "class",
+  darkMode: false,
   theme: {
     extend: {
       screens: {

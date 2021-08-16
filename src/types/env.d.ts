@@ -1,5 +1,5 @@
 declare namespace NodeJS {
   interface ProcessEnv {
-    TMDB_API_KEY: string;
+    NEXT_PUBLIC_TMDB_API_KEY: string;
   }
 }
