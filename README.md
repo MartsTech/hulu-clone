@@ -1,7 +1,5 @@
 <h1 align="center">
-  <a href="https://hulu-clone-martstech.vercel.app">
-      <img width="200px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Hulu_logo_2017.svg/1000px-Hulu_logo_2017.svg.png" alt="Hulu Logo" />
-  </a>
+  <img width="200px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Hulu_logo_2017.svg/1000px-Hulu_logo_2017.svg.png" alt="Hulu Logo" />
   <br />
   Hulu-clone
   <br />
@@ -18,7 +16,6 @@
 </p>
 
 <p align="center">
-  <a href="#demo">Demo</a> •
   <a href="#key-features">Key Features</a> •
   <a href="#key-technologies">Key Technologies</a> •
   <a href="#setup">Setup</a> •
@@ -27,12 +24,6 @@
 </p>
 
 ![Homepage Screenshot](public/screenshots/home.png?raw=true "Homepage Screenshot")
-
----
-
-## Demo
-
-Here is a working live demo [here](https://hulu-clone-martstech.vercel.app)
 
 ---
 
